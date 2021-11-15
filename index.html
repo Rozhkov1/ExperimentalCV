@@ -1,75 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Rozhkov Andrew CV</title>
-</head>
-<body>
-
-<img src="Паспорт.JPG" width="200px">
-<h1>Рожков Андрей</h1>
-<p>Я работаю на <em>заводе</em>.</p>
-<p>Я <strong>люблю</strong> работать на заводе.</p>
-<hr/>
-
-<h1>Мои социальные сети</h1>
-<ol>
-    <li><a href="https://t.me/rozhkovandrey" target="_blank">Telegram</a></li>
-    <li><a href="https://www.facebook.com/buhhater" target="_blank">Facebook</a></li>
-    <li><a href="https://mail.google.com/" target="_blank">Gmail</a></li>
-    <li><a href="https://github.com/Rozhkov1" target="_blank">GitHub</a></li>
-</ol>
-
-<h1>Мои хобби</h1>
-<ul>
-    <li>Спорт</li>
-    <li>Музыка</li>
-    <li>Программирование</li>
-</ul>
-
-<h1>Опыт работы</h1>
-<table border="2px">
-    <tr>
-        <th>Завод</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
-
-    <tr>
-        <td>ЗТМК</td>
-        <td>плавильщик</td>
-        <td>2013 - 2019</td>
-    </tr>
-
-    <tr>
-        <td>Запорожкокс</td>
-        <td>дверевой</td>
-        <td>2021 - 2022</td>
-    </tr>
-
-</table>
-
-<h1>Любимые YouTube каналы</h1>
-<a href="youtubeChannels.html">Просмотреть список</a>
-
-<h1>Связаться со мной</h1>
-
-<form action="/">
-    <label for="name">Ваше имя:</label>
-    <input type="text" id="name" placeholder="Введите ваше имя...">
-    <br/>
-    <label for="email">Ваш email:</label>
-    <input type="text" id="email" placeholder="Введите email...">
-    <br/>
-    <label for="message">Ваше сообщение:</label>
-    <textarea rows="2" cols="50" id="message" placeholder="Введите ваше сообщение..."></textarea>
-    <br>
-    <input type="submit" value="Связаться!">
-</form>
-
-</body>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -78,72 +6,96 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="container">
+    <div class="info">
+        <img src="Паспорт.JPG" width="200px" class="avatar">
+        <div class="info-text">
+            <h1>Рожков Андрей</h1>
+            <p>Я работаю на <em>заводе</em>.</p>
+            <p>Я <strong>люблю</strong> работать на заводе.</p>
 
-<div class="info">
-    <img src="Паспорт.JPG" class="avatar">
+            <h4>Мои социальные сети</h4>
 
-    <h1>Рожков Андрей</h1>
-    <p>Я работаю на заводе.</p>
-    <p>Я <strong>люблю</strong> работать на заводе.</p>
+            <a href="https://t.me/rozhkovandrey" target="_blank">Telegram</a>
+            |
+            <a href="https://www.facebook.com/buhhater" target="_blank">Facebook</a>
+            |
+            <a href="https://mail.google.com/" target="_blank">Gmail</a>
+            |
+            <a href="https://github.com/Rozhkov1" target="_blank">GitHub</a>
+        </div>
+    </div>
+
+    <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ul class="hobby_list">
+            <li>Спорт</li>
+            <li>Музыка</li>
+            <li>Программирование</li>
+        </ul>
+    </div>
+
+    <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
+            <tr>
+                <td>ЗТМК</td>
+                <td>плавильщик</td>
+                <td>2013 - 2019</td>
+            </tr>
+
+            <tr>
+                <td>Запорожкокс</td>
+                <td>дверевой</td>
+                <td>2021 - 2022</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card bg-red">
+        <h2>Любимые YouTube каналы</h2>
+        <ul class="link-list">
+            <li>
+                <a href="https://www.youtube.com/c/%D0%92%D0%B0%D1%82%D0%B0%D0%A8%D0%BE%D1%83_%D0%90%D0%BD%D0%B4%D1%80%D0%B5%D0%B9%D0%9F%D0%BE%D0%BB%D1%82%D0%B0%D0%B2%D0%B0"
+                   target="_blank">Вата Шоу</a>
+            </li>
+
+            <li>
+                <a href="https://www.youtube.com/c/PhilippLackner" target="_blank">Phillip Lackner</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2>Связаться со мной</h2>
+
+        <form action="/">
+            <div class="row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите ваше имя...">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш email:</label>
+                    <input type="text" id="email" placeholder="Введите email...">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <textarea rows="2" cols="50" id="message" placeholder="Введите ваше сообщение..."></textarea>
+            </div>
+            <input class="btn" type="submit" value="Связаться!">
+        </form>
+
+
+        <div class="position">
+            <div class="box"></div>
+
+        </div>
+
+
+        <div style="margin-bottom: 500px;"></div>
+    </div>
 </div>
-
-<hr/>
-
-<h2>Мои социальные сети</h2>
-<ol>
-    <li><a href="https://t.me/rozhkovandrey" target="_blank">Telegram</a></li>
-    <li><a href="https://www.facebook.com/buhhater" target="_blank">Facebook</a></li>
-    <li><a href="https://mail.google.com/" target="_blank">Gmail</a></li>
-    <li><a href="https://github.com/Rozhkov1" target="_blank">GitHub</a></li>
-</ol>
-
-<h2>Мои хобби</h2>
-<ul>
-    <li>Спорт</li>
-    <li>Музыка</li>
-    <li>Программирование</li>
-</ul>
-
-<h2>Опыт работы</h2>
-<table border="2px">
-    <tr>
-        <th>Завод</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
-
-    <tr>
-        <td>ЗТМК</td>
-        <td>плавильщик</td>
-        <td>2013 - 2019</td>
-    </tr>
-
-    <tr>
-        <td>Запорожкокс</td>
-        <td>дверевой</td>
-        <td>2021 - 2022</td>
-    </tr>
-
-</table>
-
-<h2>Любимые YouTube каналы</h2>
-<a href="youtubeChannels.html">Просмотреть список</a>
-
-<h2>Связаться со мной</h2>
-
-<form action="/">
-    <label for="name">Ваше имя:</label>
-    <input type="text" id="name" placeholder="Введите ваше имя...">
-    <br/>
-    <label for="email">Ваш email:</label>
-    <input type="text" id="email" placeholder="Введите email...">
-    <br/>
-    <label for="message">Ваше сообщение:</label>
-    <textarea rows="2" cols="50" id="message" placeholder="Введите ваше сообщение..."></textarea>
-    <br>
-    <input type="submit" value="Связаться!">
-</form>
-
 </body>
->>>>>>> added styles.css
 </html>
